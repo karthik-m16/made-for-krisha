@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Krisha — You Are Limitless</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --text: #e9eef7;
+      --muted: #a9b4c9;
+      --primary: #7aa5ff;
+      --accent: #ffd49e;
+      --heart: #ff7aa2;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    header {
+      text-align: center;
+      padding: 80px 0 50px;
+    }
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(32px, 5vw, 52px);
+      margin: 0;
+      background: linear-gradient(180deg, #ffffff, #cfe0ff 65%, #a3b9ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    p {
+      color: var(--muted);
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      background: linear-gradient(180deg, #ffffff, #d6e4ff 70%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .gallery {
+      display: grid;
+      gap: 16px;
+    }
+    @media (min-width: 720px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(122, 165, 255, 0.15);
+    }
+    .promise {
+      display: flex;
+      gap: 12px;
+      background: #0f1520;
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .promise .icon {
+      font-size: 20px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin: 60px 0 20px;
+    }
+    .heart-trail {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+    }
+    .heart {
+      position: absolute;
+      font-size: 16px;
+      color: var(--heart);
+      opacity: 0.7;
+      animation: float 1.8s ease forwards;
+    }
+    @keyframes float {
+      to {
+        transform: translateY(-60px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Krisha, You Are Limitless</h1>
+      <p>This space is built just for you — to remind you that you’re stronger, brighter, and more extraordinary than you realize.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="section-title">My Promise to You</h2>
+        <div class="card">
+          <div class="promise"><div class="icon">💬</div><div><b>I’ll cheer you on</b><br>Every step, every win, every laugh — I’ll be there.</div></div>
+          <div class="promise"><div class="icon">🚀</div><div><b>You’re unstoppable</b><br>Even when life feels heavy, your spirit is wild and unbreakable.</div></div>
+          <div class="promise"><div class="icon">🌸</div><div><b>You bring beauty</b><br>Like flowers blooming in unexpected places, you light up the world.</div></div>
+          <div class="promise"><div class="icon">🔥</div><div><b>You’re crazy amazing</b><br>Hot Wheels fast, fearless, and full of spark — that’s you.</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Gallery of Energy</h2>
+        <div class="card gallery">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Bright pink flowers in bloom">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Sunflower field under blue sky">
+          <img src="https://images.unsplash.com/photo-1617817545406-1f5a5e2d0a2a?q=80&w=1200&auto=format&fit=crop" alt="Colorful toy cars lined up">
+          <img src="https://images.unsplash.com/photo-1617817545406-1f5a5e2d0a2a?q=80&w=1200&auto=format&fit=crop" alt="Hot Wheels car close-up">
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Crazy Encouragement</h2>
+        <div class="card">
+          <p>Krisha, you’re not just surviving — you’re rewriting the rules. You’re the plot twist nobody saw coming, the spark that refuses to fade. You’re a mix of wild laughter, stubborn courage, and the kind of energy that makes people believe in miracles.</p>
+          <p>Whenever you feel like giving up, remember: even Hot Wheels cars need a track, and flowers need rain. You’ve got both — and you’ve got me, always.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Made for Krisha — with endless care and belief.
+    </footer>
+  </div>
+
+  <div class="heart-trail"></div>
+  <script>
+    const trail = document.querySelector('.heart-trail');
+    document.addEventListener('click', (e) => {
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.textContent = '❤';
+      h.style.left = (e.clientX - 8) + 'px';
+      h.style.top = (e.clientY - 8) + 'px';
+      trail.appendChild(h);
+      setTimeout(() => h.remove(), 1800);
+    });
+  </script>
+</body>
+</html>
